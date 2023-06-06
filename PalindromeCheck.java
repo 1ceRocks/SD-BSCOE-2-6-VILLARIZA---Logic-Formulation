@@ -10,19 +10,18 @@ public class PalindromeCheck {
 
         for(int i = original.length() - 1; i>=0; i--) {
             reversed += original.charAt(i);
-            System.out.println(reversed);
         }
+        System.out.println("Original String: " + original + "\nReversed String: " + reversed);
 
         // check for palindrome word case
         boolean palindrome = true;
         for(int i=0; i < original.length(); i++) {
             if(original.charAt(i) != reversed.charAt(i)) {
-                palindrome = false;
-            }
-        } if(!palindrome) {
-            System.out.println("This word is NOT a palindrome.");
+                palindrome = false; }}
+        if(!palindrome) {
+            System.out.println("\nThis word is NOT a palindrome.");
         } else {
-            System.out.println("This word is a palindrome.");
+            System.out.println("\nThis word is a palindrome.");
         }
     }
 }
